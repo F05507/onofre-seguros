@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onofre Seguros</title>
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -83,6 +85,33 @@
     form button:hover {
       background: #c30710;
     }
+    .map-container {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .map-container iframe {
+      border: 0;
+      border-radius: 10px;
+      width: 100%;
+      height: 300px;
+    }
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-links p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: #eb0914;
+    }
+    .social-links a:hover {
+      color: #c30710;
+    }
   </style>
 </head>
 <body>
@@ -95,17 +124,62 @@
   <main>
     <div class="card">
       <h2>Sobre Nós</h2>
-      <p>Com mais de 25 anos de experiência no mercado segurador na Lourinhã, somos uma empresa em constante evolução no sentido de prestar os melhores serviços aos nossos clientes, na procura das melhores soluções para a proteção das suas vidas, famílias e bens, tanto no momento da venda/aconselhamento, como na proximidade na resolução de sinistros.</p>
+      <p>Com mais de 25 anos de experiência no mercado segurador, somos uma empresa em constante evolução no sentido de prestar os melhores serviços aos nossos clientes, na procura das melhores soluções para a proteção das suas vidas, famílias e bens, tanto no momento da venda/aconselhamento, como na proximidade na resolução de sinistros.</p>
       <p>A Confiança e Segurança são palavras-chave no nosso dia-a-dia, assim como a rapidez e eficiência na resposta ao cliente, seja qual for o canal de contacto por ele escolhido.</p>
+      <p>Somos Mediadores Exclusivos Fidelidade, certificados e reconhecidos pela seguradora, desde 2015, como a única Loja Fidelidade do concelho da Lourinhã.</p>
     </div>
 
-    <div class="card">
-      <h2>Contactos</h2>
-      <p><strong>Telefone:</strong> 261 414 386</p>
-      <p><strong>Whatsapp:</strong> 912 669 628</p>
-      <p><strong>Email:</strong> <a href="mailto:geral@onofre-seguros.pt">geral@onofre-seguros.pt</a></p>
-      <p><strong>Morada:</strong> Rua Dr. Carlos Luís Reis Silva 1A 2530-102 Lourinhã</p>
-    </div>
+<div class="card">
+  <h2>Contactos</h2>
+
+  <p>
+    <i class="fas fa-phone" style="color:#eb0914; margin-right:5px;"></i>
+    <strong>Telefone:</strong> 261 414 386
+  </p>
+
+  <p>
+    <i class="fab fa-whatsapp" style="color:#25D366; margin-right:5px;"></i>
+    <strong>Whatsapp:</strong>
+    <a href="https://wa.me/351912669628" target="_blank">912 669 628</a>
+  </p>
+
+  <p>
+    <i class="fas fa-envelope" style="color:#eb0914; margin-right:5px;"></i>
+    <strong>Email:</strong>
+    <a href="mailto:geral@onofre-seguros.pt">geral@onofre-seguros.pt</a>
+  </p>
+
+  <p>
+    <i class="fas fa-map-marker-alt" style="color:#eb0914; margin-right:5px;"></i>
+    <strong>Morada:</strong> Rua Dr. Carlos Luís Reis Silva 1A 2530-102 Lourinhã
+  </p>
+
+  <div class="map-container" style="margin: 15px 0;">
+    <iframe src="https://www.google.com/maps?q=Rua+Dr.+Carlos+Luís+Reis+Silva+1A+2530-102+Lourinhã&output=embed"
+      width="100%" height="250" style="border:0; border-radius:8px;"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p style="text-align:center; margin-top:10px;">
+      <a href="https://www.google.com/maps/place/Rua+Dr.+Carlos+Lu%C3%ADs+Reis+Silva+1A+2530-102+Lourinh%C3%A3"
+         target="_blank">
+        📍 Ver no Google Maps
+      </a>
+    </p>
+  </div>
+
+  <div class="social-links" style="text-align:center; margin-top:15px;">
+    <p>Visite-nos nas Redes Sociais</p>
+    <a href="https://www.facebook.com/loja.fidelidade.lourinha" target="_blank"
+       style="font-size:1.5rem; margin:0 10px; color:#1877F2;">
+       <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/onofreseguros/" target="_blank"
+       style="font-size:1.5rem; margin:0 10px; color:#E1306C;">
+       <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
+
 
     <div class="card">
       <h2>Peça a sua Simulação</h2>
@@ -126,7 +200,6 @@
         <label for="nif">NIF</label>
         <input type="tel" id="nif" name="nif" placeholder="O seu número de contribuinte">
 
-
         <label for="tipo_seguro">Tipo de Seguro</label>
         <select id="tipo_seguro" name="tipo_seguro" required>
           <option value="">Selecione o tipo de seguro</option>
@@ -144,6 +217,86 @@
         <button type="submit">Enviar Pedido</button>
       </form>
     </div>
+
+       <div class="card">
+  <h2>Agende uma Reunião connosco</h2>
+  <form action="https://formsubmit.co/geral@onofre-seguros.pt" method="POST">
+    <input type="hidden" name="_subject" value="Novo pedido de agendamento de reunião - Onofre Seguros">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <label for="nome_agendamento">Nome</label>
+    <input type="text" id="nome_agendamento" name="nome" placeholder="O seu nome" required>
+
+    <label for="email_agendamento">Email</label>
+    <input type="email" id="email_agendamento" name="email" placeholder="O seu email" required>
+
+    <label for="telemovel_agendamento">Telemóvel</label>
+    <input type="tel" id="telemovel_agendamento" name="telemovel" placeholder="O seu telemóvel">
+
+    <label for="tipo_reuniao">Tipo de Reunião</label>
+    <select id="tipo_reuniao" name="tipo_reuniao" required>
+      <option value="">Selecione</option>
+      <option value="presencial">Presencial</option>
+      <option value="online">Online</option>
+    </select>
+
+    <label for="data">Data pretendida</label>
+    <input type="date" id="data" name="data" required>
+
+    <label for="hora">Horário pretendido</label>
+    <select id="hora" name="hora" required>
+      <option value="">Selecione a hora</option>
+      <!-- Geração manual dos blocos de 15min -->
+      <option value="09:00">09:00</option>
+      <option value="09:15">09:15</option>
+      <option value="09:30">09:30</option>
+      <option value="09:45">09:45</option>
+      <option value="10:00">10:00</option>
+      <option value="10:15">10:15</option>
+      <option value="10:30">10:30</option>
+      <option value="10:45">10:45</option>
+      <option value="11:00">11:00</option>
+      <option value="11:15">11:15</option>
+      <option value="11:30">11:30</option>
+      <option value="11:45">11:45</option>
+      <option value="12:00">12:00</option>
+      <option value="12:15">12:15</option>
+      <option value="12:30">12:30</option>
+      <option value="12:45">12:45</option>
+      <option value="13:00">13:00</option>
+      <option value="13:15">13:15</option>
+      <option value="13:30">13:30</option>
+      <option value="13:45">13:45</option>
+      <option value="14:00">14:00</option>
+      <option value="14:15">14:15</option>
+      <option value="14:30">14:30</option>
+      <option value="14:45">14:45</option>
+      <option value="15:00">15:00</option>
+      <option value="15:15">15:15</option>
+      <option value="15:30">15:30</option>
+      <option value="15:45">15:45</option>
+      <option value="16:00">16:00</option>
+      <option value="16:15">16:15</option>
+      <option value="16:30">16:30</option>
+      <option value="16:45">16:45</option>
+      <option value="17:00">17:00</option>
+      <option value="17:15">17:15</option>
+      <option value="17:30">17:30</option>
+      <option value="17:45">17:45</option>
+      <option value="18:00">18:00</option>
+      <option value="18:15">18:15</option>
+      <option value="18:30">18:30</option>
+      <option value="18:45">18:45</option>
+      <option value="19:00">19:00</option>
+    </select>
+
+    <label for="mensagem_agendamento">Observações</label>
+    <textarea id="mensagem_agendamento" name="mensagem" placeholder="Se desejar, indique detalhes adicionais" rows="4"></textarea>
+
+    <button type="submit">Agendar Reunião</button>
+  </form>
+</div>
   </main>
 
   <footer>
